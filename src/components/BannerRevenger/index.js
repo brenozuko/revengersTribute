@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import container from '../../tools/container';
 import TagRevenger from '../TagRevenger';
 import TitleRevenger from '../TitleRevenger';
-import ThumbRevenger from '../ThumbRevenger';
 
 export const BannerRevenger = styled.section `
  display: flex; 

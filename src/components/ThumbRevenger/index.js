@@ -1,10 +1,20 @@
-import styled from 'styled-components'
+import React from 'react'
+import {WrapperThumb} from './styles'
+import {Thumb} from './styles'
+import {Avatar} from './styles'
 
 
-const ThumbRevenger = styled.img `
-border-radius: 4px;
-border: 4rem solid var(--color-execute);
-height: 300px;
-`
+
+function ThumbRevenger({src, alt, avatar, nameAlt}){
+    return (
+
+        <WrapperThumb>
+            <Thumb src = {src} alt = {alt}/>
+            <Avatar src = {avatar} alt = {nameAlt} />
+        </WrapperThumb>
+
+    )
+
+}
 
 export default ThumbRevenger

@@ -28,7 +28,7 @@ ${container};
     }
 
     & > ${ButtonRevenger} {
-     background-color: var(--color-primary-medium);
+     background-color: var(--color-primary-button);
      border-radius: 0;
      position: fixed;
      border: 0;

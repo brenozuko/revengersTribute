@@ -11,6 +11,8 @@ import TitleRevenger from './components/TitleRevenger'
 import DescriptionRevenger from './components/DescriptionRevenger'
 import ThumbRevenger from './components/ThumbRevenger'
 import thumb from './assets/img/revenger-thumb.jpg'
+import lb from './assets/img/little-busters.png'
+
 
 function App() {
   return (
@@ -31,7 +33,13 @@ function App() {
       <DescriptionRevenger>Numa terra erma e distante, havia uma party peculiar. Este tributo é dedicado a contar a história de nossos queridos e anônimos aventureiros.  </DescriptionRevenger>
       </Text>
 
-      <ThumbRevenger src = {thumb} alt = "Primeira arte oficial" />
+      <ThumbRevenger 
+      src = {thumb} 
+      alt = "Primeira arte oficial" 
+      avatar = {lb}
+      nameAlt = "Quem entendeu, entendeu."
+
+      />
      
       </BannerRevenger>
 
