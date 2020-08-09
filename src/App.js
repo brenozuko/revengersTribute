@@ -21,7 +21,7 @@ function App() {
      <Wrapper>
 
    <Logo />
-   <ButtonRevenger>Nova Memória</ButtonRevenger>
+   <ButtonRevenger as="a" href = "/video/new">Nova Memória</ButtonRevenger>
      </Wrapper>
  
    </HeaderRevenger>
