@@ -4,7 +4,7 @@ import LogoRevenger from '../LogoRevenger'
 import container from '../../tools/container'
 
 
-export const HeaderRevenger = styled.header `
+export const HeaderRevenger = styled.header`
 padding: 20rem 35rem;
 background-color: var(--color-black-dark);
 border-bottom: 2px solid var(--color-primary-medium);
@@ -14,7 +14,7 @@ border-bottom: 2px solid var(--color-primary-medium);
 
 }
 `
-export const Wrapper = styled.div `
+export const Wrapper = styled.div`
 display: flex;
 justify-content: space-between;
 align-items: center;

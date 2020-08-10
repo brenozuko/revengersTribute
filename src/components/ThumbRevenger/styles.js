@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 
-export const Avatar = styled.img `
+export const Avatar = styled.img`
 position: absolute;
 height: 150px;
 bottom: 60rem;
@@ -12,12 +12,12 @@ transition: transform linear 300ms, opacity 100ms linear;
 
 `
 
-export const Thumb = styled.img `
+export const Thumb = styled.img`
   height: 100%;
  
  `
 
-export const WrapperThumb = styled.figure `
+export const WrapperThumb = styled.figure`
 position: relative;
 border-radius: 4px;
 border: 4rem solid var(--color-execute);
@@ -44,5 +44,4 @@ overflow: hidden;
   }
 
 }
-`
-
+`;
