@@ -10,11 +10,17 @@ const ButtonRevenger = styled.button`
   font-size: 15rem;
   cursor: pointer;
   text-decoration: none;
-  transition: background-color 100ms linear, transition 100ms linear;
+  transition: background-color 150ms linear,
+    transform 150ms cubic-bezier(0, 1.87, 0.37, 1.64);
 
   &:hover {
     background-color: var(--color-primary-medium);
     transform: scale(1.1);
+  }
+
+  &:active {
+    transition: background-color 200ms linear, transform 100ms linear;
+    transform: scale(0.95);
   }
 `;
 

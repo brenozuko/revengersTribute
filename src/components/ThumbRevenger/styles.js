@@ -10,15 +10,16 @@ export const Avatar = styled.img`
 `;
 
 export const Thumb = styled.img`
-  height: 100%;
   width: 100%;
+  height: 100%;
 `;
 
 export const WrapperThumb = styled.figure`
   position: relative;
   border-radius: 4px;
   border: 4rem solid var(--color-execute);
-  height: 300px;
+  width: 950px;
+  height: 320px;
   overflow: hidden;
 
   &:hover {

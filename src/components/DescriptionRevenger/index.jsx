@@ -6,6 +6,6 @@ const DescriptionRevenger = styled.p`
   color: var(--color-gray-light);
   font-weight: 300;
   line-break: normal;
-  display: block;
+  display: inline-block;
 `;
 export default DescriptionRevenger;
