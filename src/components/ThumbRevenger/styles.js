@@ -11,6 +11,7 @@ export const Avatar = styled.img`
 
 export const Thumb = styled.img`
   height: 100%;
+  width: 100%;
 `;
 
 export const WrapperThumb = styled.figure`
@@ -22,7 +23,7 @@ export const WrapperThumb = styled.figure`
 
   &:hover {
     & > ${Avatar} {
-      transform: translateX(-110%);
+      transform: translateX(-105%);
       opacity: 1;
       transition: transform linear 100ms, opacity 500ms linear;
     }

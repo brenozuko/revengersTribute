@@ -48,9 +48,10 @@ function App() {
         <Logo />
         <p>
           Site tributo aos
-          <Highlight>Revengers</Highlight>
+          <Highlight> Revengers </Highlight>
           feito por
           <LinkBreno href="https://github.com/brenozuko" target="_blank">
+            {' '}
             Breno Zukowski
           </LinkBreno>
         </p>
