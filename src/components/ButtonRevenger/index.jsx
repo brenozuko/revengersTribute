@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
 const ButtonRevenger = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   padding: 14px 35px;
   background-color: var(--color-black-dark);
   color: var(--color-gray-light);
@@ -10,12 +14,26 @@ const ButtonRevenger = styled.button`
   font-size: 15rem;
   cursor: pointer;
   text-decoration: none;
-  transition: background-color 150ms linear,
-    transform 150ms cubic-bezier(0, 1.87, 0.37, 1.64);
+  overflow: hidden;
 
-  &:hover {
+  &::before {
+    content: '';
+    position: absolute;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
     background-color: var(--color-primary-medium);
-    transform: scale(1.1);
+    border-radius: 4px;
+    transform: translateX(-100%);
+    transition: transform 150ms linear;
+  }
+  &::after {
+    content: '${(props) => props.children}';
+    position: absolute;
+  }
+
+  &:hover::before {
+    transform: translateX(0);
   }
 
   &:active {

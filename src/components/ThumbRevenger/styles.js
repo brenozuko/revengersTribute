@@ -18,7 +18,7 @@ export const WrapperThumb = styled.figure`
   position: relative;
   border-radius: 4px;
   border: 4rem solid var(--color-execute);
-  width: 950px;
+  width: 1000px;
   height: 320px;
   overflow: hidden;
 
