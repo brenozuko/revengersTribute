@@ -24,7 +24,8 @@ const ButtonRevenger = styled.button`
     height: 100%;
     background-color: var(--color-primary-medium);
     border-radius: 4px;
-    transform: translateX(-100%);
+    transform-origin: bottom left;
+    transform: translateX(-100%) scaleX(1.5) skew(-30deg);
     transition: transform 150ms linear;
   }
   &::after {
@@ -33,7 +34,7 @@ const ButtonRevenger = styled.button`
   }
 
   &:hover::before {
-    transform: translateX(0);
+    transform: translateX(-30) scaleX(1.5) skew(-30deg);
   }
 
   &:active {

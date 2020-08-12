@@ -26,9 +26,11 @@ export const Wrapper = styled.div`
     }
 
     & > ${ButtonRevenger} {
+      display: flex;
       background-color: var(--color-primary-button);
       border-radius: 0;
       position: fixed;
+      justify-content: center;
       border: 0;
       bottom: 0;
       width: 100vw;
