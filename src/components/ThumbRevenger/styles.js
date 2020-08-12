@@ -22,6 +22,10 @@ export const WrapperThumb = styled.figure`
   height: 320px;
   overflow: hidden;
 
+  @media (max-width: 800px) {
+    display: none;
+  }
+
   &:hover {
     & > ${Avatar} {
       transform: translateX(-105%);

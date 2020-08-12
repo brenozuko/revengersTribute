@@ -14,6 +14,10 @@ const FooterRevenger = styled.footer`
   padding: 20rem 0;
   border-top: 4px solid var(--color-primary-medium);
 
+  @media (max-width: 800px) {
+    display: none;
+  }
+
   & > ${LogoRevenger} {
     margin-bottom: 10rem;
   }
