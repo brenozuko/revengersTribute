@@ -16,6 +16,7 @@ const ButtonRevenger = styled.button`
   text-decoration: none;
   overflow: hidden;
 
+
   &::before {
     content: '';
     position: absolute;
@@ -24,8 +25,8 @@ const ButtonRevenger = styled.button`
     height: 100%;
     background-color: var(--color-primary-medium);
     border-radius: 4px;
-    transform: translateX(120%) scaleX(1) skew(-30deg);
-    transition: transform 150ms linear;
+    transform: translateX(120%) skew(-30deg);
+    transition: transform 200ms linear;
   }
   &::after {
     content: '${(props) => props.children}';
@@ -38,7 +39,7 @@ const ButtonRevenger = styled.button`
 
   &:active {
     transition: background-color 200ms linear, transform 100ms linear;
-    transform: scale(0.95);
+    transform: scale(0.85);
   }
 `;
 
