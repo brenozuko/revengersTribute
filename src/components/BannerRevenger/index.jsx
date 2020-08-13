@@ -16,11 +16,11 @@ export const Text = styled.div`
   padding-top: 10rem;
   padding-right: 20rem;
 
-  ${TagRevenger} {
+  & > ${TagRevenger} {
     margin-bottom: 40rem;
   }
 
-  ${TitleRevenger} {
+  & > ${TitleRevenger} {
     margin-bottom: 20rem;
   }
 `;

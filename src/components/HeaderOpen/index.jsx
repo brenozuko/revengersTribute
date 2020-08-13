@@ -9,7 +9,7 @@ function HeaderOpen() {
       <Wrapper>
         <LogoRevenger />
         <ButtonRevenger as="a" href="/video/new">
-          Nova Memória
+          Entrar
         </ButtonRevenger>
       </Wrapper>
     </HeaderStyle>

@@ -8,6 +8,55 @@ import thumb from './assets/img/revenger-thumb.jpg';
 import lb from './assets/img/little-busters.png';
 import HeaderOpen from './components/HeaderOpen';
 import FooterOpen from './components/FooterOpen';
+import SectionRevenger from './components/SectionRevenger';
+
+const videos = [
+  {
+    src: { thumb },
+    alt: 'Thumb revenger',
+    title: 'Vídeo topster',
+    avatar: { lb },
+    channelName: 'Teste',
+    timer: '00:02:00',
+    link: 'https://www.youtube.com/watch?v=_1FC8XCmwkY',
+  },
+  {
+    src: { thumb },
+    alt: 'Thumb revenger',
+    title: 'Vídeo topster',
+    avatar: { lb },
+    channelName: 'Teste',
+    timer: '00:02:00',
+    link: 'https://www.youtube.com/watch?v=_1FC8XCmwkY',
+  },
+  {
+    src: { thumb },
+    alt: 'Thumb revenger',
+    title: 'Vídeo topster',
+    avatar: { lb },
+    channelName: 'Teste',
+    timer: '00:02:00',
+    link: 'https://www.youtube.com/watch?v=_1FC8XCmwkY',
+  },
+  {
+    src: { thumb },
+    alt: 'Thumb revenger',
+    title: 'Vídeo topster',
+    avatar: { lb },
+    channelName: 'Teste',
+    timer: '00:02:00',
+    link: 'https://www.youtube.com/watch?v=_1FC8XCmwkY',
+  },
+  {
+    src: { thumb },
+    alt: 'Thumb revenger',
+    title: 'Vídeo topster',
+    avatar: { lb },
+    channelName: 'Teste',
+    timer: '00:02:00',
+    link: 'https://www.youtube.com/watch?v=_1FC8XCmwkY',
+  },
+];
 
 function App() {
   return (
@@ -33,6 +82,19 @@ function App() {
         />
       </BannerRevenger>
 
+      <SectionRevenger>
+        <TagRevenger>Comece por aqui: </TagRevenger>
+        <DescriptionRevenger>
+          {' '}
+          Existem algumas coisas legais sobre a nossa existência nesse planeta.
+          Não sei se você sabe, mas vários dos membros deste pequeno grupinho
+          possuem habilidades especiais. Em breve você conhecerá as histórias
+          deles em detalhes. Por hora, assista alguns vídeos:
+        </DescriptionRevenger>
+
+        <TagRevenger small>SANIC.MP4</TagRevenger>
+        {/* <CarrouselRevenger videso={videos} /> */}
+      </SectionRevenger>
       <FooterOpen />
     </>
   );
