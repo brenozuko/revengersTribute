@@ -1,10 +1,4 @@
 import React from 'react';
-import Logo from './components/LogoRevenger';
-import { HeaderRevenger, Wrapper } from './components/HeaderRevengers';
-import ButtonRevenger from './components/ButtonRevenger';
-import FooterRevenger from './components/FooterRevenger';
-import LinkBreno from './components/LinkBreno';
-import Highlight from './components/Highlight';
 import { BannerRevenger, Text } from './components/BannerRevenger';
 import TagRevenger from './components/TagRevenger';
 import TitleRevenger from './components/TitleRevenger';
@@ -12,18 +6,13 @@ import DescriptionRevenger from './components/DescriptionRevenger';
 import ThumbRevenger from './components/ThumbRevenger';
 import thumb from './assets/img/revenger-thumb.jpg';
 import lb from './assets/img/little-busters.png';
+import HeaderOpen from './components/HeaderOpen';
+import FooterOpen from './components/FooterOpen';
 
 function App() {
   return (
     <>
-      <HeaderRevenger>
-        <Wrapper>
-          <Logo />
-          <ButtonRevenger as="a" href="/video/new">
-            Nova Memória
-          </ButtonRevenger>
-        </Wrapper>
-      </HeaderRevenger>
+      <HeaderOpen />
 
       <BannerRevenger>
         <Text>
@@ -44,18 +33,7 @@ function App() {
         />
       </BannerRevenger>
 
-      <FooterRevenger>
-        <Logo />
-        <p>
-          Site tributo aos
-          <Highlight> Revengers </Highlight>
-          feito por
-          <LinkBreno href="https://github.com/brenozuko" target="_blank">
-            {' '}
-            Breno Zukowski
-          </LinkBreno>
-        </p>
-      </FooterRevenger>
+      <FooterOpen />
     </>
   );
 }

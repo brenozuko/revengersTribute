@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const TitleRevenger = styled.h1`
-  font-size: 40rem;
+  font-size: 35rem;
   color: var(--color-gray-light);
 `;
 

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import LogoRevenger from '../LogoRevenger';
 
-const FooterRevenger = styled.footer`
+const FooterStyle = styled.footer`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,4 +23,4 @@ const FooterRevenger = styled.footer`
   }
 `;
 
-export default FooterRevenger;
+export default FooterStyle;
