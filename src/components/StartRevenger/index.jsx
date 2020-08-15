@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 const StartRevenger = styled.h2`
   font-family: 'Press Start 2P';
+  text-decoration: none;
   padding: 18rem 15rem;
   display: inline-block;
   font-size: 45rem;

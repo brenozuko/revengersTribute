@@ -84,7 +84,9 @@ function App() {
       </BannerRevenger>
 
       <SectionRevenger>
-        <StartRevenger>PRESS START</StartRevenger>
+        <StartRevenger as="a" href="https://matias.ma/nsfw/" target="_blank">
+          PRESS START
+        </StartRevenger>
         <TagRevenger small>SANIC.MP4</TagRevenger>
         {/* <CarrouselRevenger videso={videos} /> */}
       </SectionRevenger>
