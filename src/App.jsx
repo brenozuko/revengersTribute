@@ -9,6 +9,7 @@ import lb from './assets/img/little-busters.png';
 import HeaderOpen from './components/HeaderOpen';
 import FooterOpen from './components/FooterOpen';
 import SectionRevenger from './components/SectionRevenger';
+import StartRevenger from './components/StartRevenger';
 
 const videos = [
   {
@@ -83,15 +84,7 @@ function App() {
       </BannerRevenger>
 
       <SectionRevenger>
-        <TagRevenger>Comece por aqui: </TagRevenger>
-        <DescriptionRevenger>
-          {' '}
-          Existem algumas coisas legais sobre a nossa existência nesse planeta.
-          Não sei se você sabe, mas vários dos membros deste pequeno grupinho
-          possuem habilidades especiais. Em breve você conhecerá as histórias
-          deles em detalhes. Por hora, assista alguns vídeos:
-        </DescriptionRevenger>
-
+        <StartRevenger>PRESS START</StartRevenger>
         <TagRevenger small>SANIC.MP4</TagRevenger>
         {/* <CarrouselRevenger videso={videos} /> */}
       </SectionRevenger>

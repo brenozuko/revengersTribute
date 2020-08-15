@@ -14,8 +14,7 @@ export const BannerRevenger = styled.section`
 
 export const Text = styled.div`
   padding-top: 10rem;
-  padding-right: 20rem;
-
+  max-width: 45%;
   & > ${TagRevenger} {
     margin-bottom: 40rem;
   }

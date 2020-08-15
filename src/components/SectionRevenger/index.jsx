@@ -21,7 +21,7 @@ const SectionRevenger = styled.section`
   }
 
   & > ${DescriptionRevenger} {
-    max-width: 800px;
+    max-width: 820px;
     margin-left: auto;
     margin-right: auto;
   }
