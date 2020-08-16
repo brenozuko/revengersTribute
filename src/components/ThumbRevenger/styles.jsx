@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+export const Channel = styled.h2``;
 export const Avatar = styled.img`
   position: absolute;
   opacity: 0;
@@ -83,7 +84,7 @@ export const Background = styled.div`
     }
 
     &::after {
-      transform: rotate(-45deg) scale(1);
+      transform: rotate(-40deg) scale(1);
     }
 
     & > ${WrapperThumb} {
