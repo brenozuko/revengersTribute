@@ -81,6 +81,7 @@ function App() {
           avatar={lb}
           channelNAme=""
           title="Little Busters! Opening HD"
+          timer="01:29"
         />
       </BannerRevenger>
 

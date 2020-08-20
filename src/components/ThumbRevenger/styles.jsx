@@ -1,6 +1,17 @@
 import styled from 'styled-components';
 import { WrapperAvatar } from '../AvatarRevenger/styles';
 
+export const Timer = styled.span`
+  position: absolute;
+  right: var(--space);
+  bottom: var(--space);
+  color: var(--color-gray-light);
+  font-size: 15px;
+  background-color: var(--color-black-medium);
+  padding: 2rem 4rem;
+  opacity: 0;
+  transition: opacity 100ms linear;
+`;
 export const Title = styled.figcaption`
   position: absolute;
   font-size: 20rem;
@@ -103,6 +114,11 @@ export const Background = styled.div`
         transform: translateY(0);
         opacity: 1;
         transition: transform linear 100ms, opacity 100ms linear;
+      }
+
+      & > ${Timer} {
+        opacity: 1;
+        transition: opacity 100ms linear;
       }
     }
   }
