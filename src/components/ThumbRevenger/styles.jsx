@@ -1,19 +1,11 @@
 import styled from 'styled-components';
-
-export const Channel = styled.h2``;
-export const Avatar = styled.img`
-  position: absolute;
-  opacity: 0;
-  height: 60rem;
-  top: var(--space);
-  left: var(--space);
-  transform: translateX(-110%);
-  transition: transform linear 300ms, opacity 100ms linear;
-`;
+import { WrapperAvatar } from '../AvatarRevenger/styles';
 
 export const Thumb = styled.img`
   width: 100%;
   height: 100%;
+  transition: filter 100ms linear;
+  /* opacity: 0; */
 `;
 
 export const WrapperThumb = styled.figure`
@@ -26,21 +18,14 @@ export const WrapperThumb = styled.figure`
   overflow: hidden;
   cursor: pointer;
   transition: transform 80ms linear, opacity 300ms linear;
-  background-color: var(--color-primary-medium);
-  &:hover {
-    &::before {
-      content: '';
-      background-color: #000;
-      display: inline-block;
-      width: 100%;
-      height: 100%;
-      opacity: 0.8;
-      transition: opacity 300ms linear;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 0;
-    }
+
+  & > ${WrapperAvatar} {
+    transform: translateX(-110%);
+    transition: transform linear 300ms, opacity 100ms linear;
+    opacity: 0;
+    position: absolute;
+    top: var(--space);
+    left: var(--space);
   }
 `;
 
@@ -89,7 +74,12 @@ export const Background = styled.div`
 
     & > ${WrapperThumb} {
       transform: translate(var(--move), var(--move));
-      & > ${Avatar} {
+
+      & > ${Thumb} {
+        filter: brightness(0.2);
+      }
+
+      & > ${WrapperAvatar} {
         transform: translateX(0);
         opacity: 1;
         transition: transform linear 100ms, opacity 500ms linear;
