@@ -1,6 +1,20 @@
 import styled from 'styled-components';
 import { WrapperAvatar } from '../AvatarRevenger/styles';
 
+export const Title = styled.figcaption`
+  position: absolute;
+  font-size: 20rem;
+  bottom: var(--space);
+  left: var(--space);
+  color: var(--color-gray-light);
+  font-weight: 300;
+  background-color: var(--color-black-medium);
+  padding: 4rem 5rem;
+  transform: translateY(-110%);
+  opacity: 0;
+  transition: transform linear 100ms, opacity 100ms linear;
+`;
+
 export const Thumb = styled.img`
   width: 100%;
   height: 100%;
@@ -76,13 +90,19 @@ export const Background = styled.div`
       transform: translate(var(--move), var(--move));
 
       & > ${Thumb} {
-        filter: brightness(0.2);
+        filter: brightness(0.4);
       }
 
       & > ${WrapperAvatar} {
         transform: translateX(0);
         opacity: 1;
         transition: transform linear 100ms, opacity 500ms linear;
+      }
+
+      & > ${Title} {
+        transform: translateY(0);
+        opacity: 1;
+        transition: transform linear 100ms, opacity 100ms linear;
       }
     }
   }

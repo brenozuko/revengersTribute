@@ -79,7 +79,8 @@ function App() {
           src={thumb}
           alt="Primeira arte oficial"
           avatar={lb}
-          channelNAme="Little Busters! Opening HD"
+          channelNAme=""
+          title="Little Busters! Opening HD"
         />
       </BannerRevenger>
 
