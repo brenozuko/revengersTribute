@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import ThumbRevenger from '../ThumbRevenger';
 
 function CarrouselRevenger({ videos }) {
-  const { src, alt, title, avatar, channelName, timer, link } = videos;
+  const { src, alt, title, avatar, channelName, timer, link } = videos[0];
   return (
     <ThumbRevenger
       src={src}
