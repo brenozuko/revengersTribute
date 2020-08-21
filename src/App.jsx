@@ -10,49 +10,14 @@ import HeaderOpen from './components/HeaderOpen';
 import FooterOpen from './components/FooterOpen';
 import SectionRevenger from './components/SectionRevenger';
 import StartRevenger from './components/StartRevenger';
+import CarrouselRevenger from './components/CarrouselRevenger';
 
 const videos = [
   {
-    src: { thumb },
+    src: thumb,
     alt: 'Thumb revenger',
     title: 'Vídeo topster',
-    avatar: { lb },
-    channelName: 'Teste',
-    timer: '00:02:00',
-    link: 'https://www.youtube.com/watch?v=_1FC8XCmwkY',
-  },
-  {
-    src: { thumb },
-    alt: 'Thumb revenger',
-    title: 'Vídeo topster',
-    avatar: { lb },
-    channelName: 'Teste',
-    timer: '00:02:00',
-    link: 'https://www.youtube.com/watch?v=_1FC8XCmwkY',
-  },
-  {
-    src: { thumb },
-    alt: 'Thumb revenger',
-    title: 'Vídeo topster',
-    avatar: { lb },
-    channelName: 'Teste',
-    timer: '00:02:00',
-    link: 'https://www.youtube.com/watch?v=_1FC8XCmwkY',
-  },
-  {
-    src: { thumb },
-    alt: 'Thumb revenger',
-    title: 'Vídeo topster',
-    avatar: { lb },
-    channelName: 'Teste',
-    timer: '00:02:00',
-    link: 'https://www.youtube.com/watch?v=_1FC8XCmwkY',
-  },
-  {
-    src: { thumb },
-    alt: 'Thumb revenger',
-    title: 'Vídeo topster',
-    avatar: { lb },
+    avatar: lb,
     channelName: 'Teste',
     timer: '00:02:00',
     link: 'https://www.youtube.com/watch?v=_1FC8XCmwkY',
@@ -76,6 +41,7 @@ function App() {
         </Text>
 
         <ThumbRevenger
+          target="_blank"
           src={thumb}
           alt="Primeira arte oficial"
           avatar={lb}
@@ -90,7 +56,7 @@ function App() {
           PRESS START
         </StartRevenger>
         <TagRevenger small>SANIC.MP4</TagRevenger>
-        {/* <CarrouselRevenger videso={videos} /> */}
+        <CarrouselRevenger videos={videos} />
       </SectionRevenger>
       <FooterOpen />
     </>

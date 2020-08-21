@@ -34,7 +34,7 @@ const ButtonRevenger = styled.button`
   }
 
   &:hover::before {
-    transform: translateX(-10%) scaleX(1.5) skew(-30deg);
+    transform: translateX(0) scaleX(1.5) skew(-30deg);
   }
 
   &:active {
