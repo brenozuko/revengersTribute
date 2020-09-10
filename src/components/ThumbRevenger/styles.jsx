@@ -34,12 +34,10 @@ export const Thumb = styled.img`
 `;
 
 export const WrapperThumb = styled.figure`
-  max-width: 99%;
   position: relative;
   border-radius: 4px;
   border: var(--border) solid var(--color-primary-medium);
-  width: 1000px;
-  height: 320px;
+  width: 540px;
   overflow: hidden;
   cursor: pointer;
   transition: transform 80ms linear, opacity 300ms linear;
@@ -60,7 +58,6 @@ export const Background = styled.div`
   --move: calc(var(--space) * -1);
   position: relative;
   display: inline-block;
-  max-width: 50%;
   background-color: var(--color-primary-medium);
 
   &::before,
@@ -123,3 +120,5 @@ export const Background = styled.div`
     }
   }
 `;
+
+//comentário de teste

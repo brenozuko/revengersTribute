@@ -22,6 +22,24 @@ const videos = [
     timer: '00:02:00',
     link: 'https://www.youtube.com/watch?v=_1FC8XCmwkY',
   },
+  {
+    src: thumb,
+    alt: 'Thumb revenger',
+    title: 'Vídeo topster',
+    avatar: lb,
+    channelName: 'Teste',
+    timer: '00:02:00',
+    link: 'https://www.youtube.com/watch?v=_1FC8XCmwkY',
+  },
+  {
+    src: thumb,
+    alt: 'Thumb revenger',
+    title: 'Vídeo topster',
+    avatar: lb,
+    channelName: 'Teste',
+    timer: '00:02:00',
+    link: 'https://www.youtube.com/watch?v=_1FC8XCmwkY',
+  },
 ];
 
 function App() {

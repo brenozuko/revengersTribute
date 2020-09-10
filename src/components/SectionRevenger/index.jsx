@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import container from '../../tools/container';
 import TagRevenger from '../TagRevenger';
 import DescriptionRevenger from '../DescriptionRevenger';
 
@@ -7,16 +6,14 @@ const SectionRevenger = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 20rem;
-  padding-bottom: 20rem;
-  ${container}
+  padding: 0 30rem 50rem;
 
   & > ${TagRevenger} {
     margin-top: 40rem;
     margin-bottom: 40rem;
   }
 
-  & > ${TagRevenger}:not(:first-child){
+  & > ${TagRevenger}:not(:first-child) {
     align-self: flex-start;
   }
 

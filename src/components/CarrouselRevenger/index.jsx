@@ -1,19 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ThumbRevenger from '../ThumbRevenger';
+import CarouselStyle from './styles';
 
 function CarrouselRevenger({ videos }) {
-  const { src, alt, title, avatar, channelName, timer, link } = videos[0];
   return (
-    <ThumbRevenger
-      src={src}
-      alt={alt}
-      title={title}
-      avatar={avatar}
-      channelName={channelName}
-      timer={timer}
-      link={link}
-    />
+    <CarouselStyle>
+      {videos.map(({ src, alt, title, avatar, channelName, timer, link }) => (
+        <ThumbRevenger
+          src={src}
+          alt={alt}
+          title={title}
+          avatar={avatar}
+          channelName={channelName}
+          timer={timer}
+          link={link}
+        />
+      ))}
+    </CarouselStyle>
   );
 }
 
